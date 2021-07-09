@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "534a70cf-a359-4c60-9bed-321b118911f3",
+		"name": "AirlineBookingSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ArlineTickets",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST AirlineTicketA",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"checkedInBag\": 12,\r\n\"dateOfBirth\": \"1996-11-06T23:00:00.000Z\",\r\n\"departure\": \"2021-07-14T22:00:00.000Z\",\r\n\"destination\": \"Bergen, Norway\",\r\n\"firstName\": \"Verica\",\r\n\"freeCarryOnBag\": 1,\r\n\"lastName\": \"Matovikj\",\r\n\"origin\": \"Oslo, Norway\",\r\n\"passportNumber\": \"ADSF32434\",\r\n\"return\": \"2021-07-21T22:00:00.000Z\",\r\n\"trolleyBag\": 2,\r\n\"type\": \"AirlineA\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/airline-a-ticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"airline-a-ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT AirlineTicketA",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"checkedInBag\": 12,\r\n\"dateOfBirth\": \"1996-11-06T23:00:00.000Z\",\r\n\"departure\": \"2021-07-14T22:00:00.000Z\",\r\n\"destination\": \"Bergen, Norway\",\r\n\"firstName\": \"Verica\",\r\n\"freeCarryOnBag\": 1,\r\n\"lastName\": \"Matovikj\",\r\n\"origin\": \"Oslo, Norway\",\r\n\"passportNumber\": \"ADSF32434\",\r\n\"return\": \"2021-07-21T22:00:00.000Z\",\r\n\"trolleyBag\": 12,\r\n\"type\": \"AirlineA\",\r\n\"id\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/airline-a-ticket/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"airline-a-ticket",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST AirlineTicketB",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loyalMemberId\":21322,\r\n    \"useLoyalMemberCredits\":true,\r\n    \"type\":\"AirlineB\",\r\n    \"firstName\":\"Verica\",\r\n    \"lastName\":\"Matovikj\",\r\n    \"dateOfBirth\":\"1996-11-06T23:00:00Z\",\r\n    \"passportNumber\":\"SADA322\",\r\n    \"origin\":\"Stavanger, Norway\",\r\n    \"destination\":\"Skien, Norway\",\r\n    \"departure\":\"2021-07-15T22:00:00Z\",\r\n    \"return\":\"2021-07-22T22:00:00Z\",\r\n    \"freeCarryOnBag\":1,\r\n    \"checkedInBag\":21\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/airline-b-ticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"airline-b-ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT AirlineTicketB",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loyalMemberId\":21322,\r\n    \"useLoyalMemberCredits\":true,\r\n    \"type\":\"AirlineB\",\r\n    \"firstName\":\"Verica\",\r\n    \"lastName\":\"Matovikj\",\r\n    \"dateOfBirth\":\"1996-11-06T23:00:00Z\",\r\n    \"passportNumber\":\"SADA322\",\r\n    \"origin\":\"Stavanger, Norway\",\r\n    \"destination\":\"Skien, Norway\",\r\n    \"departure\":\"2021-07-15T22:00:00Z\",\r\n    \"return\":\"2021-07-22T22:00:00Z\",\r\n    \"freeCarryOnBag\":3,\r\n    \"checkedInBag\":21,\r\n    \"id\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/airline-b-ticket/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"airline-b-ticket",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ArlineTicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ArlineTicket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50699/api/airline-tickets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50699",
+					"path": [
+						"api",
+						"airline-tickets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
